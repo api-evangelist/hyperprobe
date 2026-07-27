@@ -1,0 +1,16 @@
+# HyperProbe
+
+## Docs
+
+- [AI-Native Debugging with MCP](https://docs.hyperprobe.co/ai-native/mcp-server.md): Use your favorite AI assistant (opencode, Cursor, Windsurf, Claude) to autonomously debug and trace production code using HyperProbe Model Context Protocol (MCP) workspace configuration.
+- [VS Code Extension IDE Guide](https://docs.hyperprobe.co/extension/guide.md): Install, connect, configure, and manage real-time probes directly inside your IDE.
+- [Production Safety, Guardrails & Security Compliance](https://docs.hyperprobe.co/guides/safety-and-security.md): A comprehensive guide on how HyperProbe protects your application performance and secures production data.
+- [How It Works](https://docs.hyperprobe.co/how-it-works.md): A deep-dive explanation of the HyperProbe lifecycle, instrumentation engine, and production safety guardrails.
+- [HyperProbe: Production Debugging Without Deployments](https://docs.hyperprobe.co/index.md): Capture live variable snapshots, inject logs, and trace call stacks in running production code—without pausing execution, redeploying, or changing your source. Get started in under 2 minutes.
+- [Probe Types & Instrumentation Catalog](https://docs.hyperprobe.co/probes/overview.md): Understand, configure, and compare the four dynamic probe types available inside HyperProbe.
+- [Quickstart: Set up HyperProbe in 2 Minutes](https://docs.hyperprobe.co/quickstart.md): Configure your editor, drop in the agent, and capture live production variables. Zero restarts. Zero disruption.
+- [Java Agent Setup Guide](https://docs.hyperprobe.co/sdks/java.md): Configure and attach the standard Java Instrumentation agent to your running JVM applications with zero code changes.
+- [Node.js SDK Setup Guide](https://docs.hyperprobe.co/sdks/node.md): Install, initialize, and optimize the HyperProbe Node.js SDK inside in-process Node applications.
+- [Python SDK Setup Guide](https://docs.hyperprobe.co/sdks/python.md): Install, initialize, and optimize the HyperProbe Python SDK inside in-process Python applications.
+- [Self-Hosting Deployment Guide](https://docs.hyperprobe.co/self-hosting.md): Deploy the HyperProbe server, database, and telemetry broker on your own infrastructure using Docker Compose.
+- [Troubleshooting Glossary & FAQ](https://docs.hyperprobe.co/troubleshooting/guide.md): Step-by-step solutions to common errors, connectivity issues, and frequently asked questions.

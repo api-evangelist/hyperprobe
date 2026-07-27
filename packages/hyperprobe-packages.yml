@@ -1,0 +1,41 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.hyperprobe.co/quickstart
+packages:
+- language: javascript
+  registry: npm
+  name: "@hyperprobe/node-sdk"
+  version: 1.2.22
+  url: https://www.npmjs.com/package/@hyperprobe/node-sdk
+  install: npm install @hyperprobe/node-sdk
+  official: true
+  note: In-process Node.js SDK; captures live variable snapshots from running services.
+- language: javascript
+  registry: npm
+  name: "@hyperprobe/mcp-server"
+  version: 1.2.22
+  url: https://www.npmjs.com/package/@hyperprobe/mcp-server
+  install: npx -y @hyperprobe/mcp-server
+  official: true
+  note: Official Model Context Protocol (stdio) server for AI coding agents.
+- language: python
+  registry: test-pypi
+  name: hyperprobe-agent
+  version: 1.12.19b4
+  url: https://test.pypi.org/project/hyperprobe-agent/
+  install: pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ hyperprobe-agent
+  official: true
+  note: >-
+    In-process Python agent (ships a hyperprobe-run launcher). Currently
+    distributed from the TestPyPI index per the published quickstart, not the
+    production PyPI index.
+- language: java
+  registry: s3-direct
+  name: hyperprobe-agent.jar
+  url: https://hyperprobe-assets.s3.ap-south-1.amazonaws.com/static/hyperprobe-agent.jar
+  install: curl -O https://hyperprobe-assets.s3.ap-south-1.amazonaws.com/static/hyperprobe-agent.jar
+  official: true
+  note: >-
+    JVM bytecode-instrumentation agent, attached via -javaagent. Distributed as a
+    direct JAR download (the homepage also references an io.hyperprobe:agent Maven
+    coordinate; not confirmed on Maven Central at enrichment time).

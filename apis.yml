@@ -1,7 +1,24 @@
 aid: hyperprobe
 name: Hyperprobe
-description: Hyperprobe is a company surfaced as a portfolio company of y-combinator and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Hyperprobe is a runtime data platform for AI-native software development,
+  built by a San Francisco team in Y Combinator's Summer 2026 batch. It lets
+  developers and coding agents (Cursor, Claude Code, Codex, opencode, Windsurf)
+  set live, non-breaking breakpoints in running production services directly
+  from the IDE — capturing exact variable snapshots, injecting logs, and tracing
+  call stacks without pausing threads, redeploying, or changing source code.
+  Probes are read-only and non-blocking with under 1% overhead, and PII is
+  redacted in-process before any data leaves the container's memory boundary
+  (password, secret, token, authorization, cookie, key, signature, ssn and
+  creditCard patterns are masked by default). Hyperprobe ships in-process SDKs
+  for Node.js (@hyperprobe/node-sdk), Java (a bytecode-instrumentation agent),
+  and Python (hyperprobe-agent), a VS Code extension, and an official Model
+  Context Protocol (MCP) server (@hyperprobe/mcp-server) that lets AI assistants
+  autonomously register conditional probes and read real runtime evidence
+  instead of flat logs. The platform can run fully self-hosted via Docker
+  Compose. Originally added to the API Evangelist network as a Y Combinator
+  portfolio lead, this profile has been enriched from Hyperprobe's public
+  developer surface.
 url: https://raw.githubusercontent.com/api-evangelist/hyperprobe/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +26,66 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://hyperprobe.co/favicon.svg
 tags:
 - Company
+- Observability
+- Debugging
+- Developer Tools
+- Runtime
+- AI
+- MCP
+- SDK
+- Production Debugging
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: Website
+  url: https://hyperprobe.co/
+- type: DeveloperPortal
+  url: https://docs.hyperprobe.co/
+- type: Documentation
+  url: https://docs.hyperprobe.co/
+- type: GettingStarted
+  url: https://docs.hyperprobe.co/quickstart
+- type: SignUp
+  url: https://app.hyperprobe.co
+- type: SDKs
+  url: packages/hyperprobe-packages.yml
+- type: Packages
+  url: packages/hyperprobe-packages.yml
+- type: MCPServer
+  url: mcp/hyperprobe-mcp.yml
+- type: CLI
+  url: cli/hyperprobe-cli.yml
+- type: LLMsTxt
+  url: llms/hyperprobe-llms.txt
+- type: WellKnown
+  url: well-known/hyperprobe-well-known.yml
+- type: Conformance
+  url: conformance/hyperprobe-conformance.yml
+- type: DomainSecurity
+  url: security/hyperprobe-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

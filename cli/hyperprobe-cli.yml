@@ -1,0 +1,26 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.hyperprobe.co/sdks/python
+description: >-
+  Hyperprobe ships a first-party command launcher with its Python agent that
+  auto-instruments an application without code changes, plus an npx-invoked MCP
+  server binary. There is no separate account/management CLI; probes are managed
+  from the VS Code extension and the app.hyperprobe.co dashboard.
+commands:
+- name: hyperprobe-run
+  package: hyperprobe-agent (python)
+  synopsis: hyperprobe-run <your normal start command>
+  example: hyperprobe-run python main.py
+  description: >-
+    Auto-initialization launcher that prepends to a normal Python startup command
+    (works with gunicorn/uvicorn) and attaches the Hyperprobe agent using the
+    commit_sha, service_id, environment, and broker_url configuration.
+- name: "@hyperprobe/mcp-server"
+  package: "@hyperprobe/mcp-server (npm)"
+  synopsis: npx -y @hyperprobe/mcp-server
+  description: Runs the stdio MCP server for AI coding agents (see mcp/hyperprobe-mcp.yml).
+config:
+  file: .hprc
+  keys: [serviceId]
+  env: [HYPERPROBE_SERVICE_ID, HYPERPROBE_ENVIRONMENT, HYPERPROBE_BROKER_URL, NODE_ENV, GIT_COMMIT]
+  broker_url: https://logger.app.hyperprobe.co

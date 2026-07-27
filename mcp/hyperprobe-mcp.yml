@@ -1,0 +1,33 @@
+generated: '2026-07-19'
+method: searched
+status: published
+source: https://docs.hyperprobe.co/ai-native/mcp-server
+server:
+  name: hyperprobe
+  transport: stdio
+  command: npx
+  args:
+  - "-y"
+  - "@hyperprobe/mcp-server"
+  package: "@hyperprobe/mcp-server"
+  env:
+    BACKEND_URL: https://app.hyperprobe.co
+clients:
+- name: Cursor
+- name: Claude Desktop
+- name: Windsurf
+- name: opencode
+  note: Uses an "environment" block in opencode.json rather than "env".
+description: >-
+  Official Hyperprobe MCP server, published to npm as @hyperprobe/mcp-server and
+  run locally over stdio. It lets AI coding agents autonomously debug and trace
+  running production code by dynamically registering conditional probes inside a
+  live application and reading the captured variable/telemetry evidence back into
+  the agent's context. Configured per-workspace by pointing the agent at the npx
+  command with a BACKEND_URL environment variable.
+tools: []
+tools_note: >-
+  The provider documents the server's behavior (register a conditional probe,
+  inspect local variables, return captured telemetry) but does not publish an
+  enumerated tool schema; individual tool names are not asserted here to avoid
+  fabrication.

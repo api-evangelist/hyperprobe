@@ -1,0 +1,26 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.hyperprobe.co/ai-native/mcp-server
+standards:
+- id: mcp
+  name: Model Context Protocol
+  conforms: true
+  evidence: >-
+    Publishes an official MCP server (@hyperprobe/mcp-server, stdio transport)
+    documented for Cursor, Claude, Windsurf, and opencode integration.
+- id: rfc9116-security-txt
+  name: security.txt
+  conforms: false
+  evidence: No /.well-known/security.txt served on any host (all 404).
+- id: openapi
+  name: OpenAPI
+  conforms: false
+  evidence: >-
+    Hyperprobe is delivered as in-process SDKs/agents and an MCP server; it
+    publishes no public REST API or OpenAPI description.
+- id: oauth2
+  name: OAuth 2.0
+  conforms: false
+  evidence: >-
+    Access is via SSO to the app.hyperprobe.co dashboard plus a per-service UUID
+    (serviceId); no documented OAuth2 authorization surface.
