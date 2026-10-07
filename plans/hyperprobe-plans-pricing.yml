@@ -1,0 +1,56 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.hyperprobe.co/pricing
+sources:
+- https://www.hyperprobe.co/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T112025
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed+licensed
+  method: page
+  read: '2026-10-07'
+  evidence: Self-hosted or private VPC
+  managed_tier: Professional
+published: true
+note: Per-service subscription pricing; Enterprise is custom. Self-hosted offered on request (Professional)
+  or included with Enterprise paid contract, not as a free open-source edition.
+plan_count: 4
+currency: USD
+plans:
+- name: Free
+  price_text: $0 forever
+  price: 0
+  currency: USD
+  period: month
+  unit: 1 service · managed cloud
+  included_quota: Unlimited probes and captures, 7-day capture history, MCP server, all supported runtimes,
+    default PII redaction, immutable audit log, community support
+- name: Professional
+  price_text: $99 per service per month
+  price: 99
+  currency: USD
+  period: month
+  unit: per service
+  included_quota: Everything in Free, unlimited services, 30-day capture history, team-level probe policy,
+    RBAC, Google and GitHub SSO, self-hosted on request, shared Slack 1 business day response
+- name: Professional (annual)
+  price_text: $79 billed annually · 3 service minimum
+  price: 79
+  currency: USD
+  period: month
+  unit: per service, billed annually, 3 service minimum
+  included_quota: Same as Professional
+- name: Enterprise
+  price_text: Custom
+  period: year
+  unit: annual contract · volume pricing
+  included_quota: Everything in Professional, self-hosted or private VPC, data residency, custom retention,
+    org-level policy, approval gates, SAML SSO and SCIM, DPA, named engineer and contracted SLA
+rate_limit_statements:
+- Probes and captures are unlimited on every plan
+- Rate limit Cap how often a probe is allowed to capture.
