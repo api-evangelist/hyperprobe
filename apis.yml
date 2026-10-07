@@ -83,6 +83,10 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Pricing
+  url: https://www.hyperprobe.co/pricing
+- type: Plans
+  url: plans/hyperprobe-plans-pricing.yml
 - url: https://www.hyperprobe.co/resources/blog/
   type: Blog
 - type: Website
